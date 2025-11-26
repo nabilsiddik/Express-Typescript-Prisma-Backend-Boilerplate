@@ -1,6 +1,6 @@
 import type { NextFunction, Request, Response } from "express"
 import { envVars } from "../app/config/env.config.js"
-import type { JWTPayload } from "../interfaces/index.js"
+import type { JWTPayload } from "../app/interfaces/index.js"
 import { verifyToken } from "../utils/jwtToken.js"
 
 

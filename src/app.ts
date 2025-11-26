@@ -1,10 +1,10 @@
 import express, { type Request, type Response } from 'express'
 import cors from 'cors'
 import cookieParser from 'cookie-parser'
-import { router } from './routes/index.js'
+import { router } from './app/routes/index.js'
 import { envVars } from './app/config/env.config.js'
-import globalErrorHandler from './middlewares/globalErrorHandler.js'
-import { notFound } from './middlewares/notFound.js'
+import { notFound } from './app/middlewares/notFound.js'
+import globalErrorHandler from './app/middlewares/globalErrorHandler.js'
 
 export const app = express()
 

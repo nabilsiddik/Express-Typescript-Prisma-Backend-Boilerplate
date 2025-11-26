@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "nodenext",
-    "moduleResolution": "NodeNext",
-    "rootDir": "./src",
+    "target": "ES2023",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "rootDir": ".",
     "outDir": "./dist",
     "strict": true,
     "esModuleInterop": true,
@@ -18,8 +18,12 @@
     "verbatimModuleSyntax": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
-    "types": ["node"]
+    "types": ["node"],
+    "baseUrl": ".",
+    "paths": {
+      "@generated/*": ["generated/prisma/*"]
+    }
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "generated/prisma/**/*"],
   "exclude": ["node_modules", "dist"]
 }
