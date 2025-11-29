@@ -1,20 +1,20 @@
 // Enums
 export enum UserRole {
-    SUPER_ADMIN,
-    ADMIN,
-    USER
+    SUPER_ADMIN = 'SUPER_ADMIN',
+    ADMIN = 'ADMIN',
+    USER = 'USER'
 }
 
 export enum UserStatus {
-    ACTIVE,
-    BLOCKED,
-    DELETED
+    ACTIVE = 'ACTIVE',
+    BLOCKED = 'BLOCKED',
+    DELETED = 'DELETED'
 }
 
 export enum Gender {
-    MALE,
-    FEMALE,
-    OTHERS
+    MALE = 'MALE',
+    FEMALE = 'FEMALE',
+    OTHERS = 'OTHERS'
 }
 
 // Interfaces

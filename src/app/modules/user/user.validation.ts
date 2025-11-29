@@ -1,4 +1,5 @@
 import z from 'zod'
+import { Gender } from './user.interfaces'
 
 // patient creation input zod schema
 const createUserValidationSchema = z.object({
@@ -8,7 +9,7 @@ const createUserValidationSchema = z.object({
     address: z.string().optional(),
     contactNumber: z.string().optional(),
     profilePhoto: z.string().optional(),
-    gender: z.enum(['MALE', 'FEMALE', 'OTHERS'], {
+    gender: z.enum([Gender.MALE, Gender.FEMALE, Gender.OTHERS], {
         error: 'Incorrect Gender'
     }),
     role: z.enum(['SUPER_ADMIN', 'ADMIN', 'USER'])
